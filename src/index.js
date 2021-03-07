@@ -2,12 +2,14 @@ import react from 'react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import faker from 'faker'
-import Details from './components/CommentDetails'
-import Card from './components/card'
-import Season from './components/Season'
+import Details from './components/season/CommentDetails'
+import Card from './components/season/card'
+import Season from './components/season/Season'
+import SearchBar from './components/videos/searchbar';
+
 const App = ()=>{
     // console.log(faker.image.avatar);
-   
+    
     return (
     <>
         {/* <Card> 
@@ -29,7 +31,10 @@ const App = ()=>{
         post='fun'
         avatar={faker.image.avatar()}
         /> */}
-        <Season />
+        {/* <Season /> */}
+        <div className="ui container">
+            <SearchBar  />
+        </div>
     </>
     );
 
